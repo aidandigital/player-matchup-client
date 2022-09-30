@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Matchup</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <!-- jQuery® -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="brand-title" href="/">Player Matchup</a>
+    </nav>
+    <div class="callout">
+        <div class="survey-question">
+            A place for gamers to connect with others who share similar interests.
+        </div>
+        <a href="/survey" class="button" style="display: block; width: fit-content; margin-left: auto; margin-right: auto;">Get Started</a>
+        <div class="survey-question">
+        </div>
+    </div>
+    <div>
+        <h3 class="survey-question">All gamers</h3>
+        <div class="table-container">
+          <table>
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Xbox GT</th>
+                      <th>PS GT</th>
+                      <th>More</th>
+                  </tr>
+              </thead>
+              <tbody id="all-gamers">
+                  <!-- AJAX in the table -->
+              </tbody>
+          </table>
+        </div>
+        <div id="loading">
+          <div class="ajax-loader"></div>
+          <div>This app is brought to you on a free server.</div>
+          <div>Please be patient, this may take a moment at first...</div>
+        </div>
+        <details class="disclaimer">
+          <summary>Disclaimer</summary>
+          The values in the table above are merely sample data points or were published by members of the general public. Aidan Digital does not own nor is affiliated with any of the above "GT's" (gamer tags), statements, names, or any other information.
+        </details>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+          <div>
+            <span>
+              <a href="https://aidandigital.com" class="footer-link"><icon class="icon-ad"></icon></a>
+            </span>
+            <span>
+              Project by <a href="https://aidandigital.com" class="footer-link" style="text-decoration: underline">Aidan Digital</a>
+              <span class="footer-pipe">|</span>
+              <a class="footer-link footer-menu-item" id="reportBugWithRef" target="_blank">Report a Bug</a>
+            </span>
+          </div>
+          <div class="footer-main-right">
+            <a href="https://github.com/aidandigital/player-matchup" id="repo-link" class="footer-link">
+              <img id="github-logo" height="20" src="https://cdn.aidandigital.com/tech-logos/github-2.svg" />
+              <span style="padding: 5px; position: relative; bottom: 4px">View Repo</span>
+            </a>
+          </div>
+        </div>
+        <div class="footer-side">
+          <p class="footer-copyright">
+            &copy; Aidan Digital <span id="currentYear"></span>. All rights reserved.
+          </p>
+          <a style="color: black; text-decoration: none;" id="manageDataWithRef" target="_blank">Manage your Data</a>
+        </div>
+    </footer>
+    <script src="../config.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>

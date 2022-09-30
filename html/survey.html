@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey | Player Matchup</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" />
+    <!-- jQuery® -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :disabled,
+      :disabled:hover {
+        cursor: not-allowed;
+        opacity: 0.6;
+        transform: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="brand-title" href="/">Player Matchup</a>
+    </nav>
+    <section id="survey-intro">
+      <div class="survey-question">
+        Take a 10 Question Survey to Match you up with another Gamer:
+      </div>
+      <button id="begin" class="button">Begin</button>
+    </section>
+    <section id="survey-main">
+      <div class="survey-question" id="survey-question"></div>
+      <div id="survey-responses">
+        <button id="1">1</button>
+        <button id="2">2</button>
+        <button id="3">3</button>
+        <button id="4">4</button>
+        <button id="5">5</button>
+        <div id="answer-descriptions">
+          <span class="left">Definitely Not</span>
+          <span class="right">Absolutely</span>
+        </div>
+      </div>
+    </section>
+    <section id="survey-result">
+      <!--
+      <nav class="navbar">
+        <a class="brand-title" href="/">Player Matchup</a>
+      </nav>
+      -->
+      <div id="loading">
+        <div class="ajax-loader"></div>
+        <div>This app is brought to you on a free server.</div>
+        <div>Please be patient, this may take a moment at first...</div>
+      </div>
+      <div id="modal"></div>
+      <div id="back">
+        <a
+          href="/"
+          class="button"
+          style="
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+          "
+          >Back to Home</a
+        >
+      </div>
+    </section>
+    <script src="../js/survey.js"></script>
+  </body>
+</html>
