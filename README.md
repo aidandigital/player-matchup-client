@@ -21,4 +21,4 @@ A site for gamers to connect with others that share similar interests. Users tak
 * Form data validation and sanitation.
 
 ## Backend Code
-The backend code for this app is located in a separate repo found here: https://github.com/aidandigital/player-matchup-api
+Repo: https://github.com/aidandigital/player-matchup-api
