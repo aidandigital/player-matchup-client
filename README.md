@@ -20,5 +20,5 @@ A site for gamers to connect with others that share similar interests. Users tak
 * Algorithm that compares the survey results of the last 150 users to find the closest match.
 * Form data validation and sanitation.
 
-## Frontend Code
-The frontend code for this app is located in a separate repo found here: https://github.com/aidandigital/player-matchup-client
+## Backend Code
+The backend code for this app is located in a separate repo found here: https://github.com/aidandigital/player-matchup-api
