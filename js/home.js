@@ -21,7 +21,5 @@ $.get(API_URL + "/users", (data) => {
 $("#currentYear").text(new Date().getFullYear());
 $("#reportBugWithRef").attr("href", "https://aidandigital.com/report-bug?ref=" + window.location.href);
 
-$("#repo-link").attr("href", REPO_URL);
-
 const manageDataBody = "I wish to have my data associated with the email above in the Player Matchup database <deleted OR updated> (please specify how your data should be updated, if you chose that option). I understand that you will first have to verify my identity via email before making any changes to my data, and that if I no longer have access to the email associated with my data, I do not respond within 48 hours, or I provide the wrong email, you will not be able to make any changes to my data.";
 $("#manageDataWithRef").attr("href", "https://aidandigital.com/contact?ref=" + window.location.href + "&body=" + manageDataBody);
